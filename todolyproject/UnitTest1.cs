@@ -31,7 +31,7 @@ namespace todolyproject
         [TestMethod]
         public void ModifyTheIconOfAnExistingProject()
         {
-            Console.WriteLine("[TCs-1] Project – Modificar el icono de un proyecto existente\t7");
+            Console.WriteLine("[TCs-1] Project – Modificar el icono de un proyecto existente");
             Login();
             IWebElement itemIndicator = driver.FindElement(By.XPath("//li[@id='ItemId_4102319']//td[@class='ItemIndicator']"));
             // Mouse over element
