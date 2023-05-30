@@ -8,7 +8,7 @@ namespace todolyproject.src.code.page
 
         public Button optionBtn= new Button(By.XPath("//li[@id='ItemId_4102319']//td[@class='ItemIndicator']"));
         public Button iconBtn = new Button(By.CssSelector("span.IconFrame[iconid='3']"));
-        public Button listIconElement = new Button(By.XPath("//li[@id='ItemId_4102319']//div[@id='ListIcon' and contains(@style, 'alert.png')]"));
+        public Item listIconElement = new Item(By.XPath("//li[@id='ItemId_4102319']//div[@id='ListIcon' and contains(@style, 'alert.png')]"));
         public Button openPro = new Button(By.Id("ItemId_4102319"));
         public Label nameProject = new Label(By.ClassName("CurrentProjectTitle"));
 

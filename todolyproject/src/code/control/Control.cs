@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.DevTools.V111.DOM;
+using System.Xml.Linq;
 using todolyproject.src.code.session;
 
 namespace todolyproject.src.code.control
@@ -8,6 +9,7 @@ namespace todolyproject.src.code.control
     {
         protected By locator;
         protected IWebElement control;
+        public IWebElement element;
         protected IWebDriver iframe;
 
 
@@ -42,5 +44,16 @@ namespace todolyproject.src.code.control
                 return false;
             }
         }
+
+        public void FindControl2()
+        {
+            element = Session.Instance().GetBrowser().FindElement(locator);
+        }
+
+        public IWebElement GetElement()
+        {
+            return element;
+        }
+
     }
 }

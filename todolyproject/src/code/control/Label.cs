@@ -7,5 +7,11 @@ namespace todolyproject.src.code.control
         public Label(By locator) : base(locator)
         {
         }
+
+        public string GetColor()
+        {
+            FindControl();
+            return control.GetCssValue("color");
+        }
     }
 }
